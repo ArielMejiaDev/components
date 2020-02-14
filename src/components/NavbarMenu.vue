@@ -1,9 +1,9 @@
 <template>
 
     <div id="nav" :class="navBarObject">
-      <div :class="optionsActive">
+      <div :class="optionsActive" >
 
-        <div class="container">
+        <div class="container" v-if="toggle">
 
           <h2>Nuestras empresas</h2>
 
@@ -245,7 +245,7 @@ export default {
   }
   .options {
     position: absolute;
-    height: 100vh;
+    height: 1400px;
     top: 0;
     transform: translateY(-100%);
     right: 0;
@@ -381,7 +381,7 @@ export default {
   /* -------------------------------------------------------------------------- */
   @media only screen and (max-width: 600px) {
     .container {
-      padding: 0 5px;
+      padding: 20px;
     }
     .navbar .logo img {
       height: 30px;
@@ -392,6 +392,13 @@ export default {
     }
     .options .container:nth-child(1) .social-networks {
       flex-direction: column;
+    }
+    .navbar ul.logos li:last-child {
+      margin-left: 0;
+    }
+    .options ul {
+      margin: 0;
+      padding: 0;
     }
   }
 </style>
