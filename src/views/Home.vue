@@ -1,17 +1,20 @@
 <template>
   <div class="home">
-    <NavbarMenu></NavbarMenu>
+    <SiteNavbar></SiteNavbar>
+    <SiteFooter></SiteFooter>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import NavbarMenu from '@/components/NavbarMenu'
+import SiteNavbar from '@/components/SiteNavbar'
+import SiteFooter from "@/components/SiteFooter"
 
 export default {
   name: 'Home',
   components: {
-    NavbarMenu
+    SiteNavbar,
+    SiteFooter
   }
 }
 </script>

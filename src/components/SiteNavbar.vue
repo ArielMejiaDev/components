@@ -116,38 +116,38 @@
 </template>
 
 <script>
-export default {
-  name: 'NavbarMenu',
-  data: function() {
-    return {
-      toggle: false,
-      menuLabel: 'Menu'
-    }
-  },
-  computed: {
-    navBarObject: function() {
+  export default {
+    name: 'SiteNavbar',
+    data: function() {
       return {
-        'navbar navbar-white': ! this.toggle,
-        'navbar navbar-black': this.toggle
+        toggle: false,
+        menuLabel: 'Menu'
       }
     },
-    optionsActive: function() {
-      return {
-        'options': ! this.toggle,
-        'options active': this.toggle,
-      }
+    computed: {
+      navBarObject: function() {
+        return {
+          'navbar navbar-white': ! this.toggle,
+          'navbar navbar-black': this.toggle
+        }
+      },
+      optionsActive: function() {
+        return {
+          'options': ! this.toggle,
+          'options active': this.toggle,
+        }
+      },
     },
-  },
-  methods: {
-    toggleNavbar: function() {
-      this.toggle = ! this.toggle
-      this.menuLabel = 'Menu'
-      if (this.toggle) {
-        this.menuLabel = 'Cerrar'
+    methods: {
+      toggleNavbar: function() {
+        this.toggle = ! this.toggle
+        this.menuLabel = 'Menu'
+        if (this.toggle) {
+          this.menuLabel = 'Cerrar'
+        }
       }
     }
   }
-}
 </script>
 
 <style scoped>
@@ -225,7 +225,7 @@ export default {
     margin: 0 20px;
   }
   .navbar ul.logos li:last-child {
-    margin-left: 100px;
+    margin-left: 0px;
   }
   .navbar ul.logos li:last-child button {
     border: 0;
@@ -350,7 +350,7 @@ export default {
       margin: 0 40px;
     }
     .navbar ul.logos li:last-child {
-      margin-left: 160px;
+      margin-left: 10px;
     }
   }
   /* -------------------------------------------------------------------------- */
