@@ -155,7 +155,7 @@
     height: 150px;
     width: 100%;
     position: relative;
-    z-index: 1;
+    z-index: 2;
   }
   .navbar .logo img {
     height: 60px;
@@ -201,7 +201,7 @@
     max-width: 100%;
     padding: 0 100px;
     box-sizing: border-box;
-    z-index: 2;
+    z-index: 3;
     position: relative;
   }
   .flex {
@@ -252,7 +252,7 @@
     bottom: 0;
     left: 0;
     background-color: black;
-    z-index: 2;
+    z-index: 3;
     transition: .3s;
   }
   .options.active {

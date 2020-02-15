@@ -1,63 +1,63 @@
 <template>
 
-<footer>
+    <footer>
 
-    <div class="container">
+        <div class="container">
 
-        <div class="site-map">
-            <h2>Mapa del sitio</h2>
-            <ul>
-                <li>
-                    <a href="#">Nosotros</a>
-                </li>
-                <li>
-                    <a href="#">Nuestras empresas</a>
-                </li>
-                <li>
-                    <a href="#">Responsabilidad social</a>
-                </li>
-                <li>
-                    <a href="#">Publicaciones</a>
-                </li>
-                <li>
-                    <a href="#">Contacto</a>
-                </li>
-            </ul>
+            <div class="site-map">
+                <h2>Mapa del sitio</h2>
+                <ul>
+                    <li>
+                        <a href="#">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="#">Nuestras empresas</a>
+                    </li>
+                    <li>
+                        <a href="#">Responsabilidad social</a>
+                    </li>
+                    <li>
+                        <a href="#">Publicaciones</a>
+                    </li>
+                    <li>
+                        <a href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact">
+                <h2>Contacto</h2>
+
+                <ul>
+                    <li>
+                        <a href="#">(+502) 2373-5000</a>
+                    </li>
+                    <li>
+                        <a href="#">administracion@grupoalta.net</a>
+                    </li>
+                    <li>
+                        <a href="#">2 calle 10-59 zona 14, Guatemala</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="btn-gold">Waze</a>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div class="logo"></div>
+
+            <div class="credits">
+                <p>
+                    <span class="text-white">Grupo Alta 2020.</span> Todos los derechos reservados
+                    Made by <span class="text-white">Buildawow</span>
+                </p>
+            </div>
+
         </div>
 
-        <div class="contact">
-            <h2>Contacto</h2>
-
-            <ul>
-                <li>
-                    <a href="#">(+502) 2373-5000</a>
-                </li>
-                <li>
-                    <a href="#">administracion@grupoalta.net</a>
-                </li>
-                <li>
-                    <a href="#">2 calle 10-59 zona 14, Guatemala</a>
-                </li>
-
-                <li>
-                    <a href="#" class="btn-gold">Waze</a>
-                </li>
-            </ul>
-            
-        </div>
-
-        <div class="logo"></div>
-
-        <div class="credits">
-            <p>
-                <span class="text-white">Grupo Alta 2020.</span> Todos los derechos reservados
-                Made by <span class="text-white">Buildawow</span>
-            </p>
-        </div>
-
-    </div>
-
-</footer>
+    </footer>
   
 </template>
 
@@ -84,6 +84,7 @@
         padding: 0 40px;
         display: grid;
         grid-auto-columns: 25% 25% 50%;
+        grid-column-gap: 20px;
         grid-template-areas: "site-map contact logo" "credits credits credits";
     }
     .site-map {
@@ -105,7 +106,7 @@
         grid-area: logo;
         background: url(../assets/footer/footer-desktop.jpg);
         background-position: center center;
-        background-size: cover;
+        background-size: 80%;
         background-repeat: no-repeat;
     }
     footer h2 {
@@ -114,9 +115,6 @@
         font-size: 20px;
         line-height: 24px;
         margin-bottom: 34px;
-    }
-    footer ul {
-        padding: 20px;
     }
     footer ul a {
         color: #FFF;
@@ -155,6 +153,7 @@
         .container {
             padding: 0 20px;
             grid-auto-columns: 50% 50%;
+            grid-column-gap: 10px;
             grid-template-areas: "logo logo" "site-map contact" "credits credits";
         }
         .logo {
@@ -169,6 +168,10 @@
         footer {
             height: 1000px;
         }
+        footer .site-map a,
+        footer .contact a {
+            font-size: 12px;
+        }
         .container {
             padding: 0;
             margin: 0 20px;
@@ -179,7 +182,7 @@
             text-align: center;
         }
         .logo {
-            height: 150px;
+            height: 250px;
         }
     }
 </style>
