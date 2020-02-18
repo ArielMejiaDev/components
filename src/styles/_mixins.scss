@@ -23,6 +23,20 @@
     border: 1px solid $color-gold;
 }
 
+@mixin respond-to($max-width : 1040px) {
+    @media only screen and (max-width: $max-width) {
+        @content;
+    }
+}
+
 @mixin tablet {
-    
+    @media only screen and (max-width: 1080px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media only screen and (max-width: 600px) {
+        @content;
+    }
 }

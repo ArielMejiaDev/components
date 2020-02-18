@@ -34,6 +34,9 @@ export default {
         background-color: black;
         width: 100%;
         height: calc(100vh - 151px);
+        @include tablet {
+            height: auto;
+        }
         min-height: 550px;
         display: flex;
         align-items: center;
@@ -43,11 +46,25 @@ export default {
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-areas: "contact-form-contact-invitation contact-form-contact-form";
+            @include tablet {
+                grid-template-columns: 1fr;
+                grid-template-areas: "contact-form-contact-invitation" "contact-form-contact-form";
+                width: 100%;
+                padding: 20px;
+            }
             .contact-invitation {
                 grid-area: contact-form-contact-invitation;
+                @include tablet {
+                    display: flex;
+                    flex-direction: column;
+                }
             }
             .contact-invitation h1 {
                 @include goldTitle();
+                @include mobile {
+                    font-size: 40px;
+                    text-align: center;
+                }
             }
             .contact-invitation ul {
                 margin-top: 61px;
@@ -62,33 +79,53 @@ export default {
                  li {
                      span{
                           margin: 0 10px;
-                     }
+                    }
                  }
                
             }
             .contact-invitation a {
                 margin-top: 69px;
+                text-align: center;
                 @include btn--gold--outline;
+                &:hover {
+                    background-color: $color-gold;
+                    color: white;
+                }
             }
             .contact-form {
                 grid-area: contact-form-contact-form;
+                @include tablet {
+                    margin-top: 80px;
+                }
             }
-            .contact-form form input, .contact-form form textarea {
-                border: 1px solid $color-gray;
-                color: $color-gray;
-                background-color: transparent;
-                font-family: 'Montserrat', sans-serif;
-                padding: 13px 309px 16px 43px;
-                margin: 7.5px 0;
-                outline-color: transparent;
-            }
-            .contact-form form textarea {
-                padding-right: 320px;
+            .contact-form form {
+                input, textarea {
+                    border: 1px solid $color-gray;
+                    color: $color-gray;
+                    background-color: transparent;
+                    font-family: 'Montserrat', sans-serif;
+                    padding: 13px 309px 16px 43px;
+                    margin: 7.5px 0;
+                    outline-color: transparent;
+                    @include tablet {
+                        padding: 10px;
+                    }
+                }
+                textarea {
+                    padding-right: 320px;
+                    @include tablet {
+                        padding: 10px;
+                    }
+                }
+                @include tablet {
+                    display: flex;
+                    flex-direction: column;
+                }
             }
             .contact-form button {
                 background-color: $color-gold;
                 padding: 17.5px 41px 21.6px 43px;
-                border: none;
+                border: 1px solid $color-gold;
                 outline-color: transparent;
                 color: white;
                 font-family: 'Montserrat', sans-serif;
@@ -96,6 +133,12 @@ export default {
                 font-weight: 700;
                 letter-spacing: 0.88px;
                 line-height: 17px;
+                cursor: pointer;
+                &:hover {
+                    background-color: transparent;
+                    border: 1px solid $color-gold;
+                    color: $color-gold;
+                }
             }
         }
     }
