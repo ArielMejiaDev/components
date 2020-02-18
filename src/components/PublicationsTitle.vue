@@ -16,6 +16,7 @@ export default {
             @include goldTitle;
             width: 100%;
             text-align: center;
+            margin: 95px 0 22px;
         }
     }
 </style>

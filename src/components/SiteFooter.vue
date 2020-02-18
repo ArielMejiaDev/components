@@ -82,7 +82,7 @@
         max-width: 1278px;
         margin: 0 auto;
         height: 100%;
-        padding: 0 40px;
+        padding: 78px 40px 0 40px;
         display: grid;
         grid-auto-columns: 25% 25% 50%;
         /* grid-template-rows: 300px 100px; */

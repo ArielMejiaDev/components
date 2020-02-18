@@ -3,6 +3,17 @@
     margin: 0 auto;
 }
 
+@mixin generalMaxWidth {
+    max-width: 1278px;
+    margin: 0 auto;
+    padding: 0 40px;
+    @media only screen and (max-width: 600px) {
+        max-width: 1278px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+}
+
 @mixin goldTitle($fontSize: 55px) {
     color: $color-gold;
     font-family: Gelasio;
@@ -10,6 +21,12 @@
     font-style: italic;
     font-weight: 500;
     line-height: 50px;
+    @media only screen and (max-width: 600px) { 
+        font-size: 35px;
+        font-weight: 700;
+        letter-spacing: 1.27px;
+        line-height: 50px;
+    }
 }
 
 @mixin btn--gold--outline {
