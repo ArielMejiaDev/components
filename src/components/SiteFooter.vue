@@ -67,14 +67,15 @@
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+    @import "../styles/base";
     ul {
         margin: 0;
         padding: 0;
     }
     footer {
         width: 100%;
-        height: 600px;
+        /* height: 600px; */
         background-color: black;
     }
     .container {
@@ -84,6 +85,7 @@
         padding: 0 40px;
         display: grid;
         grid-auto-columns: 25% 25% 50%;
+        /* grid-template-rows: 300px 100px; */
         grid-column-gap: 20px;
         grid-template-areas: "site-map contact logo" "credits credits credits";
     }
@@ -95,8 +97,9 @@
         z-index: 1;
     }
     .credits {
+        margin: 73px 0 79px;
         grid-area: credits;
-        color: #717171;
+        color: $color-gray-light;
         font-family: 'Montserrat', sans-serif;
         font-size: 15px;
         letter-spacing: 1px;
@@ -110,7 +113,7 @@
         background-repeat: no-repeat;
     }
     footer h2 {
-        color: #A67D32;
+        color: $color-gold;
         font-family: 'Montserrat', sans-serif;
         font-size: 20px;
         line-height: 24px;
@@ -125,14 +128,14 @@
 
     }
     footer ul li {
-        border-bottom: 1px solid #A67D32;
+        border-bottom: 1px solid $color-gold;
     }
     footer a.btn-gold {
         margin: 5px 0;
         padding: 5px 30px;
         display: block;
         text-align: center;
-        background-color: #A67D32;
+        background-color: $color-gold;
         border: none;
     }
     footer .contact ul li:last-child,

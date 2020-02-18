@@ -1,0 +1,28 @@
+@mixin contactMaxWidth {
+    max-width: 1016px;
+    margin: 0 auto;
+}
+
+@mixin goldTitle($fontSize: 55px) {
+    color: $color-gold;
+    font-family: Gelasio;
+    font-size: $fontSize;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+@mixin btn--gold--outline {
+    display: inline-block;
+    color: $color-gold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.88px;
+    line-height: 17px;
+    padding: 15px 30px;
+    border: 1px solid $color-gold;
+}
+
+@mixin tablet {
+    
+}
