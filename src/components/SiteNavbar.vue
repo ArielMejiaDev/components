@@ -29,11 +29,19 @@
           <div class="main-menu">
 
             <ul>
-
-              <li><a href="#">Nosotros</a></li>
-              <li><a href="#">Responsabilidad social</a></li>
-              <li><a href="#">Publicaciones</a></li>
-              <li><a href="#">Contacto</a></li>
+              
+              <li>
+                <router-link to="/nuestro-equipo">Nosotros</router-link>
+              </li>
+              <li>
+                <router-link to="/responsabilidad-social">Responsabilidad social</router-link>
+              </li>
+              <li>
+                <router-link to="/publicaciones">Publicaciones</router-link>
+              </li>
+              <li>
+                <router-link to="/contacto">Contacto</router-link>
+              </li>
 
             </ul>
 
