@@ -5,5 +5,6 @@ module.exports = {
           prependData: `@import "~@/styles/_base.scss";` 
         },
       }
-    }
+    },
+    publicPath: '/grupo-alta/'
   }
