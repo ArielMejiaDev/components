@@ -1,9 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import Contact from '../views/Contact.vue'
-import Publications from '../views/Publications.vue'
-import OurTeam from '../views/OurTeam.vue'
+import Home from '../views/Home'
+import Contact from '../views/Contact'
+import Publications from '../views/Publications'
+import SocialResponsability from '../views/SocialResponsability'
+import OurTeam from '../views/OurTeam'
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,11 @@ const routes = [
     path: '/nuestro-equipo',
     name: 'OurTeam',
     component: OurTeam
+  },
+  {
+    path: '/responsabilidad-social',
+    name: 'SocialResponsability',
+    component: SocialResponsability
   },
   {
     path: '/about',
