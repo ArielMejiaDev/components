@@ -2,20 +2,20 @@
   <div class="home">
     <SiteNavbar></SiteNavbar>
     <h1 class="title">Landing page coming soon... 🔨</h1>
-    <SiteFooter></SiteFooter>
+    <Footer/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import SiteNavbar from '@/components/SiteNavbar'
-import SiteFooter from "@/components/SiteFooter"
+import Footer from "@/components/Footer"
 
 export default {
   name: 'Home',
   components: {
     SiteNavbar,
-    SiteFooter
+    Footer
   }
 }
 </script>

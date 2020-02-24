@@ -2,24 +2,20 @@
     <div class="social-responsability">
         <SiteNavbar/>
         <SocialResponsabilityMain/>
-        <SiteFooter/>
+        <Footer/>
     </div>
 </template>
 
 <script>
 import SiteNavbar from '@/components/SiteNavbar'
 import SocialResponsabilityMain from '@/components/SocialResponsabilityMain'
-import SiteFooter from "@/components/SiteFooter"
+import Footer from "@/components/Footer"
 export default {
     name: 'SocialResposability',
     components: {
         SiteNavbar,
         SocialResponsabilityMain,
-        SiteFooter
+        Footer
     }
 }
 </script>
-
-<style>
-
-</style>

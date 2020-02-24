@@ -5,7 +5,7 @@
         <OurTeamCompanyTitle/>
         <OurTeamGrid/>
         <JoinOurTeamSection/>
-        <SiteFooter/>
+        <Footer/>
     </div>
 </template>
 
@@ -15,7 +15,7 @@ import OurTeamCompanyBio from '@/components/OurTeamCompanyBio'
 import OurTeamCompanyTitle from '@/components/OurTeamTitle'
 import OurTeamGrid from '@/components/OurTeamGrid'
 import JoinOurTeamSection from '@/components/JoinOurTeamSection'
-import SiteFooter from "@/components/SiteFooter"
+import Footer from "@/components/Footer"
 export default {
     name: 'OurTeam',
     components: {
@@ -24,11 +24,7 @@ export default {
         OurTeamCompanyTitle,
         OurTeamGrid,
         JoinOurTeamSection,
-        SiteFooter
+        Footer
     }
 }
 </script>
-
-<style lang="scss" scoped>
-
-</style>
