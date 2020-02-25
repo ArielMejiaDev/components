@@ -61,6 +61,9 @@ export default {
         position: relative;
         overflow: hidden;
         height: 525px;
+        @include tablet {
+            height: fit-content;
+        }
         background-color: black;
         color: white;
         .footer__container {
@@ -68,11 +71,35 @@ export default {
             display: grid;
             grid-template-columns: 25% 25% 50%;
             grid-template-rows: 1fr 40px;
+            @include tablet {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 100px;
+            }
+            @include mobile {
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 100px;
+            }
             .footer__container__site-map {
                 grid-column: 1;
+                @include mobile {
+                    text-align: center;
+                }
             }
             .footer__container__contact {
                 grid-column: 2;
+                @include tablet {
+                    grid-column: 2;
+                }
+                @include mobile {
+                    grid-column: 1;
+                    text-align: center;
+                }
+                @include mobile {
+                    ul li:last-child {
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
                 ul li:last-child a {
                     background-color: $color-gold;
                     display: block;
@@ -83,6 +110,7 @@ export default {
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    max-width: 244px;
                     img {
                         height: 20px;
                         width: 95px;
@@ -92,6 +120,9 @@ export default {
             .footer__container__site-map, 
             .footer__container__contact {
                 margin-top: 79px;
+                @include tablet {
+                    margin-top: 20px;
+                }
                 h3 {
                     color: #A67D32;
                     font-family: 'Montserrat', sans-serif;
@@ -112,8 +143,15 @@ export default {
             }
             .footer__container__credits {
                 margin-top: 79px;
+                @include tablet {
+                    margin-top: 20px;
+                }
                 height: 40px;
                 grid-column: 1/3;
+                @include mobile {
+                    grid-column: 1;
+                    text-align: center;
+                }
                 color: #717171;
                 font-family: 'Montserrat', sans-serif;
                 font-size: 12px;
@@ -130,6 +168,9 @@ export default {
                 position: absolute;
                 bottom: 0;
                 right: 0;
+                @include tablet {
+                    display: none;
+                }
             }
         }
     }
