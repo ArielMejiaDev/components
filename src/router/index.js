@@ -5,6 +5,7 @@ import Contact from '../views/Contact'
 import Publications from '../views/Publications'
 import SocialResponsability from '../views/SocialResponsability'
 import OurTeam from '../views/OurTeam'
+import Internal from '../views/Internal'
 
 Vue.use(VueRouter)
 
@@ -35,13 +36,10 @@ const routes = [
     component: SocialResponsability
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
+    path: '/internal',
+    name: 'Internal',
+    component: Internal
+  },
 ]
 
 const router = new VueRouter({
