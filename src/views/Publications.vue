@@ -1,6 +1,6 @@
 <template>
   <div class="publications">
-    <SiteNavbar></SiteNavbar>
+    <ImageHeader :background="'publications/banner.jpg'" />
     <PublicationsTitle></PublicationsTitle>
     <PublicationsGrid/>
     <Footer />
@@ -8,14 +8,14 @@
 </template>
 
 <script>
-import SiteNavbar from '@/components/SiteNavbar'
+import ImageHeader from "@/components/ImageHeader"
 import PublicationsTitle from '@/components/PublicationsTitle'
 import PublicationsGrid from '@/components/PublicationsGrid'
 import Footer from "@/components/Footer"
 export default {
     name: 'Publications',
     components: {
-        SiteNavbar,
+        ImageHeader,
         PublicationsTitle,
         PublicationsGrid,
         Footer

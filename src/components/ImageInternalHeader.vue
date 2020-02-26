@@ -1,7 +1,7 @@
 <template>
-  <div class="image-header" :style="{background: `url(${ require(`@/assets/${background}`) })`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }">
-    <div class="image-header__container">
-        <div class="image-header__container__company-logo">
+  <div class="image-internal-header" :style="{background: `url(${ require(`@/assets/${background}`) })`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }">
+    <div class="image-internal-header__container">
+        <div class="image-internal-header__container__company-logo">
             <img :src="require(`@/assets/${logo}`)" alt="">
         </div>
     </div>
@@ -20,13 +20,13 @@ export default {
 
 <style lang="scss" scoped>
 
-    .image-header {
+    .image-internal-header {
         height: 600px;
         @include tablet {
             height: 300px;
         }
         width: 100%;
-        .image-header__container {
+        .image-internal-header__container {
             @include generalMaxWidth;
             display: flex;
             align-items: flex-end;
@@ -38,7 +38,7 @@ export default {
             }
             height: 100%;
             position: relative;
-            .image-header__container__company-logo {
+            .image-internal-header__container__company-logo {
                 position: absolute;
                 bottom: -150px;
                 @include sm-mobile {
