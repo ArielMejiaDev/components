@@ -3,48 +3,27 @@
 
     <div class="social-responsability-main__container">
 
-        <div class="social-responsability-main__container__image">
-            <img class="social-responsability-main__background" src="../assets/social-responsability/hero.png" alt="Social responsability image">
-        </div>
+        <h1>Responsabilidad Social</h1>
+        <p>
+            Creemos en un por lo tanto, apoyamos proyectos de sostenibilidad y 
+            compromiso con nuestra comunidad como Pintando Santa Catarina Palopo y Hogar Estuardo Mini.
+        </p>
 
-        <div class="social-responsability-main__container__text">
-
-            <div class="social-responsability-main__container__text__centerwrapper">
-                
-                <h1>Responsabilidad Social</h1>
-                <p>
-                    Creemos en un por lo tanto, apoyamos proyectos de sostenibilidad y 
-                    compromiso con nuestra comunidad como Pintando Santa Catarina Palopo y Hogar Estuardo Mini.
-                </p>
-
-            </div>
-
-            <div class="cards">
-
-                <div class="card">
-
-                    <img src="../assets/social-responsability/ayuvi.png" alt="Ayuvi picture">
-
-                    <div class="overlay">
-                        <img src="../assets/social-responsability/ayuvi-logo.png" alt="Ayuvi picture">
-                        <a href="#" target="_blank">Ir al sitio web</a>
-                    </div>
-
+        <div class="social-responsability-main__container__grid">
+            <figure>
+                <img src="@/assets/social-responsability/ayuvi.jpg" alt="Ayuvi picture">
+                <div class="overlay">
+                    <img src="@/assets/social-responsability/ayuvi-logo.png" alt="Ayuvi logo">
+                    <a href="">Ir a sitio web</a>
                 </div>
-
-                <div class="card">
-
-                    <img src="../assets/social-responsability/ayuvi.png" alt="Ayuvi logo">
-
-                    <div class="overlay">
-                        <img src="../assets/social-responsability/ayuvi-logo.png" alt="Ayuvi picture">
-                        <a href="#" target="_blank">Ir al sitio web</a>
-                    </div>
-
+            </figure>
+            <figure>
+                <img src="@/assets/social-responsability/palopo.jpg" alt="Ayuvi picture">
+                <div class="overlay">
+                    <img src="@/assets/social-responsability/ayuvi-logo.png" alt="Ayuvi logo">
+                    <a href="">Ir a sitio web</a>
                 </div>
-
-            </div>
-
+            </figure>
         </div>
 
     </div>
@@ -59,129 +38,105 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
     .social-responsability-main {
         width: 100%;
-        position: relative;
         .social-responsability-main__container {
-            @include generalMaxWidth();
-            padding-left: 0;
-            @include tablet {
-                padding: 0;
+            @include generalMaxWidth;
+            margin-bottom: 20px;
+            h1 {
+                margin-top: 89px;
+                margin-bottom: 31px;
+                @include goldTitle;
             }
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 800px;
-            grid-template-areas: "social-responsability-main__container__image social-responsability-main__container__text";
-            @include tablet {
-                grid-template-columns: 1fr;
-                grid-template-rows: 1fr;
-                grid-template-areas: "social-responsability-main__container__image" "social-responsability-main__container__text";
-            }
-            grid-column-gap: 108px;
-            .social-responsability-main__container__image {
-                grid-area: social-responsability-main__container__image;
-                img {
-                    width: 100%;
-                    object-fit: cover;
-                }
-            }
-            .social-responsability-main__container__text {
-                grid-area: social-responsability-main__container__text;
-                position: relative;
+            p {
+                color: $color-gray;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 16px;
+                letter-spacing: 0.5px;
+                line-height: 24px;
+                text-align: center;
+                width: 728px;
                 @include tablet {
-                    @include generalMaxWidth();
-                    margin: 23px 0 52px 0;                }
-                .social-responsability-main__container__text__centerwrapper {
-                    height: 50%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
+                    width: 100%;
                 }
-                h1 {
-                    @include goldTitle;
-                    @include mobile {
-                        text-align: center;
-                        font-size: 30px;
+                margin: 0 auto;
+                margin-bottom: 94px;
+                @include tablet {
+                    margin-bottom: 54px;
+                }
+            }
+            .social-responsability-main__container__grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                @include mobile {
+                    grid-template-columns: 1fr;
+                }
+                grid-gap: 10px;
+                figure {
+                    margin: 0;
+                    width: 100%;
+                    position: relative;
+                    &:hover .overlay {
+                        visibility: visible;
+                        opacity: 1;
                     }
-                    @include sm-mobile {
-                        text-align: center;
-                        font-size: 25px;
+                    img {
+                        width: 100%;
+                        vertical-align: top;
                     }
-                }
-                p {
-                    color: #797979;
-                    font-family: 'Montserrat', sans-serif;
-                    font-size: 16px;
-                    letter-spacing: 0.5px;
-                    line-height: 24px;
-                    margin-bottom: 50px;
-                }
-                .cards {
-                    position: absolute;
-                    left: -250px;
-                    bottom: 150px;
-                    display: flex;
-                    @include tablet {
-                        position: initial;
+                    .overlay {
+                        position: absolute;
+                        background-color: rgba($color: #000000, $alpha: .3);
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        display: flex;
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
-                        margin: 0;
-                    }
-                    .card {
-                        width: 50%;
-                        height: 350px;
-                        margin: 0 10px 0 0;
-                        position: relative;
+                        visibility: hidden;
+                        transition: all .3s;
+                        opacity: 0;
                         @include tablet {
-                            height: auto;
-                            margin: 0 0 20px 0;
-                        }
-                        @include mobile {
-                            width: 100%;
+                            visibility: visible;
+                            opacity: 1;
                         }
                         img {
-                            width: 100%;
-                            height: 100%;
-                            object-fit: cover;
-                            vertical-align: top;
-                        }
-                        .overlay {
-                            height: 100%;
-                            position: absolute;
-                            top: 0;
-                            right: 0;
-                            bottom: 0;
-                            left: 0;
-                            background-color: rgba($color: #000000, $alpha: 0.3);
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            justify-content: center;
-                            img {
-                                width: 184.45px;
-                                height: 89.71px;
+                            width: 200px;
+                            height: 100px;
+                            @include mobile {
+                                width: 100px;
+                                height: 50px;
                             }
-                            a {
-                                margin-top: 64px;
-                                color: #FFF;
-                                font-family: 'Montserrat', sans-serif;
-                                font-size: 14px;
-                                font-weight: 700;
-                                letter-spacing: 0.44px;
-                                line-height: 17px;
-                                text-align: center;
+                            object-fit: contains;
+                            margin-bottom: 63px;
+                            @include tablet {
+                                margin-bottom: 10px;
+                            }
+                        }
+                        a {
+                            display: block;
+                            color: white;
+                            border: 2px solid white;
+                            text-align: center;
+                            padding: 15px;
+                            width: 80%;
+                            @include mobile {
+                                padding: 10px;
+                                width: 60%;
+                            }
+                            font-family: 'Montserrat', sans-serif;
+                            font-size: 14px;
+                            font-weight: 700;
+                            letter-spacing: 0.44px;
+                            line-height: 17px;
+                            text-transform: uppercase;
+                            &:hover {
+                                background-color: white;
+                                color: black;
                                 border: 2px solid white;
-                                padding: 14px 92.5px;
-                                @include tablet {
-                                    padding: 15px 30px;
-                                    margin-top: 32px;
-                                }
-                                &:hover {
-                                    background-color: white;
-                                    color: black;
-                                }
                             }
                         }
                     }
@@ -189,4 +144,5 @@ export default {
             }
         }
     }
+
 </style>

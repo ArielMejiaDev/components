@@ -1,6 +1,6 @@
 <template>
   <div class="publications">
-    <ImageHeader :background="'publications/banner.jpg'" />
+    <ImageHeader :background="'publications/banner.jpg'" :backgroundPosition="'center'" />
     <PublicationsTitle></PublicationsTitle>
     <PublicationsGrid/>
     <Footer />

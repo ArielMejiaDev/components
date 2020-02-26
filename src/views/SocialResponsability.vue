@@ -1,19 +1,19 @@
 <template>
     <div class="social-responsability">
-        <SiteNavbar/>
+        <ImageHeader :background="'social-responsability/banner.jpg'" :backgroundPosition="'top center'" />
         <SocialResponsabilityMain/>
         <Footer/>
     </div>
 </template>
 
 <script>
-import SiteNavbar from '@/components/SiteNavbar'
+import ImageHeader from "@/components/ImageHeader"
 import SocialResponsabilityMain from '@/components/SocialResponsabilityMain'
 import Footer from "@/components/Footer"
 export default {
     name: 'SocialResposability',
     components: {
-        SiteNavbar,
+        ImageHeader,
         SocialResponsabilityMain,
         Footer
     }

@@ -1,5 +1,5 @@
 <template>
-  <div class="image-header" :style="{background: `url(${ require(`@/assets/${background}`) })`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }">
+  <div class="image-header" :style="{background: `url(${ require(`@/assets/${background}`) })`, backgroundPosition: backgroundPosition, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }">
 
   </div>
 </template>
@@ -9,6 +9,7 @@ export default {
     name: 'ImageHeader',
     props: {
         background: String,
+        backgroundPosition: String
     }
 }
 </script>
