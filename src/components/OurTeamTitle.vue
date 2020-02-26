@@ -14,13 +14,8 @@ export default {
     .out-team-title {
         width: 100%;
         h2 {
-            color: black;
-            font-family: 'Gelasio', sans-serif;
-            font-size: 50px;
-            font-style: italic;
-            font-weight: 500;
-            line-height: 50px;
-            text-align: center;
+            @include goldTitle;
+            margin-top: 79px;
             margin-bottom: 54px;
             @include mobile {
                 margin-top: 46px;

@@ -1,29 +1,23 @@
 <template>
     <div class="our-team">
-        <SiteNavbar/>
-        <OurTeamCompanyBio/>
-        <OurTeamCompanyTitle/>
+        <ImageHeader :background="'social-responsability/banner.jpg'" :backgroundPosition="'center'" />
+        <OurTeamTitle/>
         <OurTeamGrid/>
-        <JoinOurTeamSection/>
         <Footer/>
     </div>
 </template>
 
 <script>
-import SiteNavbar from '@/components/SiteNavbar'
-import OurTeamCompanyBio from '@/components/OurTeamCompanyBio'
-import OurTeamCompanyTitle from '@/components/OurTeamTitle'
+import ImageHeader from '@/components/ImageHeader'
+import OurTeamTitle from '@/components/OurTeamTitle'
 import OurTeamGrid from '@/components/OurTeamGrid'
-import JoinOurTeamSection from '@/components/JoinOurTeamSection'
 import Footer from "@/components/Footer"
 export default {
     name: 'OurTeam',
     components: {
-        SiteNavbar,
-        OurTeamCompanyBio,
-        OurTeamCompanyTitle,
+        ImageHeader,
+        OurTeamTitle,
         OurTeamGrid,
-        JoinOurTeamSection,
         Footer
     }
 }
