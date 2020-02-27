@@ -1,6 +1,6 @@
 <template>
   <div class="landing-title">
-      <h1>Todo hecho con amor en familia. </h1>
+      <h1>Todo hecho con<br > amor en familia. </h1>
   </div>
 </template>
 

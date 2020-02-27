@@ -108,9 +108,14 @@ export default {
             }
             // figure:last-child {
             //     grid-column: 1 / span 2;
-            //     height: 500px;
-            //     img {
+            //     height: 393px;
+            //     @include tablet {
+            //         height: 264px;
+            //     }
+            //     .background {
             //         object-fit: cover;
+            //         height: 100%;
+            //         width: 100%
             //     }
             // }
         }

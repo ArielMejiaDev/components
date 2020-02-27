@@ -101,15 +101,12 @@ export default {
                     }
                 }
                 ul li:last-child a {
-                    background-color: $color-gold;
-                    display: block;
                     margin-top: 30px;
                     width: 100%;
-                    text-align: center;
                     height: 50px;
                     display: flex;
                     align-items: center;
-                    justify-content: center;
+                    justify-content: flex-start;
                     max-width: 244px;
                     img {
                         height: 20px;

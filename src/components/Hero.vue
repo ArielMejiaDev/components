@@ -14,11 +14,15 @@ export default {
     .hero {
         width: 100%;
         height: 100vh;
+        background: url('../assets/landing/hero.jpg');
+        background-position: top center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-bottom: 100px;
         @include tablet {
             height: 300px;
+            background-size: cover;
+            background-position: center;
         }
-        background: url('../assets/landing/hero.jpg');
-        background-position: center;
-        margin-bottom: 100px;
     }    
 </style>
