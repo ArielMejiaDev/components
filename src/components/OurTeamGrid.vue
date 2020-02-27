@@ -10,7 +10,7 @@
                     <h2>{{ member.name }}</h2>
                     <legend>{{ member.position }}</legend>
                 </div>
-                <div class="our-team-grid__container__picture__data__bio">
+                <div v-show="member.info" class="our-team-grid__container__picture__data__bio">
                     {{ member.info }}
                 </div>
             </div>

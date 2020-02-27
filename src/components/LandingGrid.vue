@@ -1,46 +1,10 @@
 <template>
     <div class="landing-grid">
         <div class="landing-grid__container">
-            <figure>
-                <img class="background" src="@/assets/landing/casa-palopo.jpg" alt="Casa palopo">
+            <figure v-for="company in companies" :key="company.id">
+                <img class="background" :src="require(`@/assets/landing/${company.background}`)" alt="Casa palopo">
                 <div class="overlay">
-                    <img class="logo" src="@/assets/logos/logo_casa_palopo_white.svg" alt="Casa palopo logo">
-                </div>
-            </figure>
-            <figure>
-                <img class="background" src="@/assets/landing/la-esquina.jpg" alt="La esquina">
-                <div class="overlay">
-                    <img class="logo" src="@/assets/logos/logo_la_esquina_white.svg" alt="La esquina logo">
-                </div>
-            </figure>
-            <figure>
-                <img class="background" src="@/assets/landing/adela.jpg" alt="Casa palopo">
-                <div class="overlay">
-                    <img class="logo" src="@/assets/logos/logo_adela_white.svg" alt="Adela logo">
-                </div>
-            </figure>
-            <figure>
-                <img class="background" src="@/assets/landing/bizu.jpg" alt="Bizu palopo">
-                <div class="overlay">
-                    <img class="logo" src="@/assets/logos/logo_bizu_white.svg" alt="Bizu logo">
-                </div>
-            </figure>
-            <figure>
-                <img class="background" src="@/assets/landing/queseso.jpg" alt="Casa palopo">
-                <div class="overlay">
-                    <img class="logo" src="@/assets/logos/logo_queseso_white.svg" alt="Queseso logo">
-                </div>
-            </figure>
-            <figure>
-                <img class="background" src="@/assets/landing/sbt.jpg" alt="Sbt palopo">
-                <div class="overlay">
-                    <img class="logo" src="@/assets/logos/logo_sbt_white.svg" alt="Sbt logo">
-                </div>
-            </figure>
-            <figure>
-                <img class="background" src="@/assets/landing/sbt.jpg" alt="Villa Bokeh">
-                <div class="overlay">
-                    <img class="logo" src="@/assets/logos/logo_sbt_white.svg" alt="Villa Bokeh logo">
+                    <img class="logo" :src="require(`@/assets/logos/${company.logo}`)" alt="Casa palopo logo">
                 </div>
             </figure>
         </div>
@@ -50,6 +14,54 @@
 <script>
 export default {
     name: 'LandingGrid',
+    data: function() {
+        return {
+            companies: [
+                {
+                    id: 1, 
+                    name: 'Casa palopo',
+                    background: 'casa-palopo.jpg',
+                    logo: 'logo_casa_palopo_white.svg'
+                },
+                {
+                    id: 2, 
+                    name: 'La esquina',
+                    background: 'la-esquina.jpg',
+                    logo: 'logo_la_esquina_white.svg'
+                },
+                {
+                    id: 3, 
+                    name: 'Adela',
+                    background: 'adela.jpg',
+                    logo: 'logo_adela_white.svg'
+                },
+                {
+                    id: 4, 
+                    name: 'Bizu',
+                    background: 'bizu.jpg',
+                    logo: 'logo_bizu_white.svg'
+                },
+                {
+                    id: 5, 
+                    name: 'Queseso',
+                    background: 'queseso.jpg',
+                    logo: 'logo_queseso_white.svg'
+                },
+                {
+                    id: 6, 
+                    name: 'Sbt',
+                    background: 'sbt.jpg',
+                    logo: 'logo_sbt_white.svg'
+                },
+                {
+                    id: 7, 
+                    name: 'Villa Bokeh',
+                    background: 'sbt.jpg',
+                    logo: 'logo_sbt_white.svg'
+                },
+            ]
+        }
+    }
 }
 </script>
 

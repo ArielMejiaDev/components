@@ -10,18 +10,11 @@
         </p>
 
         <div class="social-responsability-main__container__grid">
-            <figure>
-                <img src="@/assets/social-responsability/ayuvi.jpg" alt="Ayuvi picture">
+            <figure v-for="beneficiary in beneficiaries" :key="beneficiary.id">
+                <img :src="require(`@/assets/social-responsability/${beneficiary.image}`)" :alt="`${beneficiary.name} image`">
                 <div class="overlay">
-                    <img src="@/assets/social-responsability/ayuvi-logo.png" alt="Ayuvi logo">
-                    <a href="">Ir a sitio web</a>
-                </div>
-            </figure>
-            <figure>
-                <img src="@/assets/social-responsability/palopo.jpg" alt="Ayuvi picture">
-                <div class="overlay">
-                    <img src="@/assets/social-responsability/ayuvi-logo.png" alt="Ayuvi logo">
-                    <a href="">Ir a sitio web</a>
+                    <img :src="require(`@/assets/social-responsability/${beneficiary.logo}`)" :alt="`${beneficiary.name} logo`">
+                    <a :href="`${beneficiary.url}`" target="_blank">Ir a sitio web</a>
                 </div>
             </figure>
         </div>
@@ -34,6 +27,26 @@
 <script>
 export default {
     name: 'SocialResponsabilityMain',
+    data: function() {
+        return {
+            beneficiaries: [
+                {
+                    id: 1, 
+                    name: 'Ayuvi',
+                    image: 'ayuvi.jpg',
+                    logo: 'ayuvi-logo.png',
+                    url: 'https://ayuvi.org.gt/',
+                },
+                {
+                    id: 2, 
+                    name: 'Pintando a santa catarina palopo',
+                    image: 'palopo.jpg',
+                    logo: 'pintando-santa-catarina-palopo-logo.png',
+                    url: 'https://pintandoelcambio.com/es/',
+                },
+            ]
+        }
+    }
 }
 </script>
 
@@ -77,10 +90,10 @@ export default {
                     margin: 0;
                     width: 100%;
                     position: relative;
-                    &:hover .overlay {
-                        visibility: visible;
-                        opacity: 1;
-                    }
+                    // &:hover .overlay {
+                    //     visibility: visible;
+                    //     opacity: 1;
+                    // }
                     img {
                         width: 100%;
                         vertical-align: top;
@@ -96,16 +109,16 @@ export default {
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
-                        visibility: hidden;
+                        visibility: visible;
                         transition: all .3s;
-                        opacity: 0;
+                        opacity: 1;
                         @include tablet {
                             visibility: visible;
                             opacity: 1;
                         }
                         img {
                             width: 200px;
-                            height: 100px;
+                            height: 90px;
                             @include mobile {
                                 width: 100px;
                                 height: 50px;

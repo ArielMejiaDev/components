@@ -10,14 +10,8 @@
                     Facebook  •  Instagram   #GrupoAltaGt
                 </p>
             </div>
-            <figure>
-                <img src="@/assets/landing/rectangle-1.png" alt="grid item">
-            </figure>
-            <figure>
-                <img src="@/assets/landing/rectangle-2.png" alt="grid item">
-            </figure>
-            <figure>
-                <img src="@/assets/landing/rectangle-3.png" alt="grid item">
+            <figure v-for="socialThumbnail in socialThumbnails" :key="socialThumbnail.id">
+                <img :src="require(`@/assets/landing/${socialThumbnail.image}`)" alt="grid item">
             </figure>
         </div>
     </div>
@@ -26,6 +20,24 @@
 <script>
 export default {
     name: 'LandingSocialLinks',
+    data: function() {
+        return {
+            socialThumbnails: [
+                {
+                    id: 1, 
+                    image: 'rectangle-1.png'
+                },
+                {
+                    id: 2, 
+                    image: 'rectangle-2.png'
+                },
+                {
+                    id: 3, 
+                    image: 'rectangle-3.png'
+                },
+            ]
+        }
+    }
 }
 </script>
 
