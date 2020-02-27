@@ -34,14 +34,14 @@ export default {
                     id: 1, 
                     name: 'Ayuvi',
                     image: 'ayuvi.jpg',
-                    logo: 'ayuvi-logo.png',
+                    logo: 'ayuvi_logo.png',
                     url: 'https://ayuvi.org.gt/',
                 },
                 {
                     id: 2, 
                     name: 'Pintando a santa catarina palopo',
                     image: 'palopo.jpg',
-                    logo: 'pintando-santa-catarina-palopo-logo.png',
+                    logo: 'pintando_santa_catarina_palopo_logo.png',
                     url: 'https://pintandoelcambio.com/es/',
                 },
             ]

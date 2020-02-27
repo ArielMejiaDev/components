@@ -30,7 +30,7 @@ export default {
                     content: '7 Luxury Hotels to Witness Natural Wonders from Your Room', 
                     url: 'https://www.architecturaldigest.com/gallery/luxury-hotels-witness-natural-wonders-from-your-room', 
                     source: 'Architectural Digest',
-                    image: 'publications/casa-palopo.jpg'
+                    image: 'publications/casa_palopo.jpg'
                 },
                 {
                     id: 2,
@@ -39,7 +39,7 @@ export default {
                     content: 'Foodie Culture Hits Central America', 
                     url: 'https://www.cntraveler.com/readers-choice-awards/caribbean-atlantic/carribean-central-america-top-hotels', 
                     source: 'Forbes',
-                    image: 'publications/la-esquina.jpg'
+                    image: 'publications/la_esquina.jpg'
                 },
                 {
                     id: 3,
@@ -57,7 +57,7 @@ export default {
                     content: 'Get away to Guatemala', 
                     url: 'https://www.brides.com/story/honeymoon-resorts-with-amazing-views', 
                     source: 'In Doral Magazine',
-                    image: 'publications/la-esquina-antigua.jpg'
+                    image: 'publications/la_esquina_antigua.jpg'
                 },
                 {
                     id: 5,
@@ -66,7 +66,7 @@ export default {
                     content: '12 Jaw-Dropping Honeymoon Resorts with Breathtaking Viewss', 
                     url: 'https://www.mensjournal.com/travel/the-7-most-stunning-gravity-defying-cliffside-hotels-in-the-world-2018/', 
                     source: 'Brides.com',
-                    image: 'publications/casa-palopo-2.jpg'
+                    image: 'publications/casa_palopo_2.jpg'
                 },
                 {
                     id: 6,
