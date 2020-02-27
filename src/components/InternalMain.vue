@@ -55,7 +55,7 @@
 
 <script>
 export default {
-    name: 'InternalBody',
+    name: 'InternalMain',
 }
 </script>
 

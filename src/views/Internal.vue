@@ -1,21 +1,21 @@
 <template>
   <div class="internal">
-      <ImageInternalHeader :background="'internal/banners/adela.jpg'" :logo="'internal/brands/adela.jpg'" />
-      <InternalBody />
+      <InternalHeader :background="'internal/banners/adela.jpg'" :logo="'internal/brands/adela.jpg'" />
+      <InternalMain />
       <Footer />
   </div>
 </template>
 
 <script>
-import ImageInternalHeader from "@/components/ImageInternalHeader"
-import InternalBody from "@/components/InternalBody"
+import InternalHeader from "@/components/InternalHeader"
+import InternalMain from "@/components/InternalMain"
 import Footer from "@/components/Footer"
 
 export default {
     name: 'Internal',
     components: {
-        ImageInternalHeader,
-        InternalBody,
+        InternalHeader,
+        InternalMain,
         Footer
     }
 }

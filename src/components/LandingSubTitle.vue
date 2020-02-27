@@ -6,7 +6,7 @@
 
 <script>
 export default {
-    name: 'SecondaryTitle',
+    name: 'LandingSubTitle',
 }
 </script>
 

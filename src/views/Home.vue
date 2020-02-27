@@ -1,33 +1,33 @@
 <template>
   <div class="home">
-    <Hero/>
+    <LandingHero />
     <LandingTitle />
-    <Bio />
-    <SecondaryTitle />
+    <LandingBio />
+    <LandingSubTitle />
     <LandingGrid />
-    <SocialLinks />
+    <LandingSocialLinks />
     <Footer/>
   </div>
 </template>
 
 <script>
-import Hero from "@/components/Hero"
+import LandingHero from "@/components/LandingHero"
 import LandingTitle from "@/components/LandingTitle"
-import Bio from "@/components/Bio"
-import SecondaryTitle from "@/components/SecondaryTitle"
+import LandingBio from "@/components/LandingBio"
+import LandingSubTitle from "@/components/LandingSubTitle"
 import LandingGrid from "@/components/LandingGrid"
-import SocialLinks from "@/components/SocialLinks"
+import LandingSocialLinks from "@/components/LandingSocialLinks"
 import Footer from "@/components/Footer"
 
 export default {
   name: 'Home',
   components: {
-    Hero,
+    LandingHero,
     LandingTitle,
-    Bio,
-    SecondaryTitle,
+    LandingBio,
+    LandingSubTitle,
     LandingGrid,
-    SocialLinks,
+    LandingSocialLinks,
     Footer
   }
 }

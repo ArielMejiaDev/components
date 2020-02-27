@@ -10,7 +10,7 @@
 
 <script>
 export default {
-    name: 'ImageInternalHeader',
+    name: 'InternalHeader',
     props: {
         background: String,
         logo: String

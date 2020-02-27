@@ -15,7 +15,7 @@
 
 <script>
 export default {
-    name: 'Bio',
+    name: 'LandingBio',
 }
 </script>
 
