@@ -1,8 +1,8 @@
 <template>
-  <div class="image-internal-header" :style="{background: `url(${ require(`@/assets/${background}`) })`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }">
+  <div class="image-internal-header" :style="{background: `url(${ require(`@/assets/internals/banners/${background}`) })`, backgroundPosition: backgroundPosition, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }">
     <div class="image-internal-header__container">
         <div class="image-internal-header__container__company-logo">
-            <img :src="require(`@/assets/${logo}`)" alt="">
+            <img :src="require(`@/assets/internals/brands/${logo}`)" alt="">
         </div>
     </div>
   </div>
@@ -13,6 +13,7 @@ export default {
     name: 'InternalHeader',
     props: {
         background: String,
+        backgroundPosition: String,
         logo: String
     }
 }

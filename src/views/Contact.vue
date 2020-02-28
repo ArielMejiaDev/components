@@ -1,15 +1,18 @@
 <template>
   <div class="contact active">
-      <ContactForm></ContactForm>
+      <Navbar />
+      <ContactForm />
   </div>
 </template>
 
 <script>
+import Navbar from "@/components/Navbar"
 import ContactForm from "@/components/ContactForm"
 
 export default {
     name: 'Contact',
     components: {
+        Navbar,
         ContactForm
     }
 }

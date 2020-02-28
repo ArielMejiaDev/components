@@ -36,7 +36,7 @@ const routes = [
     component: SocialResponsability
   },
   {
-    path: '/internal/:empresa',
+    path: '/empresa/:empresa',
     name: 'Internal',
     component: Internal
   },

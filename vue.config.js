@@ -6,5 +6,5 @@ module.exports = {
         },
       }
     },
-    publicPath: '/grupo-alta/'
+    publicPath: '/grupo-alta-demo/'
   }

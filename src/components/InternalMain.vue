@@ -5,14 +5,13 @@
 
             <div class="internal-body__container__main">
 
-                <h1>Helados con amor</h1>
-                <p>
-                    Inspirados en la historia de amor de una abuelita, 
-                    Adela trae lo mejor de los helados en una versión de los años 50’s. 
-                    Helados 100% artesanales llenos de amor en la ciudad de Guatemala.
-                </p>
+                <h1 v-if="company.slogan">{{ company.slogan }}</h1>
 
-                <img src="@/assets/internal/content-images/adela.jpg" alt="Adela picture">
+                <h1 v-else>{{ company.name }}</h1>
+
+                <p>{{ company.phrase }}</p>
+
+                <img :src="require(`@/assets/internals/content-images/${company.images.feature}`)" alt="Adela picture">
 
             </div>
 
@@ -22,26 +21,26 @@
 
                 <ul>
                     <li>
-                        <a href="#">Facebook</a>
+                        <a v-show="company.facebook" :href="`https://www.facebook.com/${company.facebook}`" target="_blank">Facebook</a>
                     </li>
                     <li>
-                        <a href="#">Instagram</a>
+                        <a v-show="company.instagram" :href="`https://www.instagram.com/${company.instagram}`" target="_blank">Instagram</a>
                     </li>
                 </ul>
 
-                <a class="site-link" href="#">Ir a sitio web</a>
+                <a v-show="company.website" class="site-link" :href="`https://${company.website}`" target="_blank">Ir a sitio web</a>
 
                 <div class="next-link">
 
                     <a class="home-icon" href="#">
-                        <img src="@/assets/internal/assets/home.svg" alt="menu">
+                        <img src="@/assets/internals/assets/home.svg" alt="menu">
                     </a>
                     
                     <div class="next-links">
-                        <h6>Bizú</h6>
-                        <a class="arrow" href="#">
-                            <img src="@/assets/internal/assets/arrow.png" alt="arrow">
-                        </a>
+                        <h6>{{ company.next.routeName }}</h6>
+                        <router-link class="arrow" :to="`/empresa/${company.next.route}`">
+                            <img src="@/assets/internals/assets/arrow.png" alt="arrow">
+                        </router-link>
                     </div>
 
                 </div>
@@ -56,6 +55,7 @@
 <script>
 export default {
     name: 'InternalMain',
+    props: ['company']
 }
 </script>
 
