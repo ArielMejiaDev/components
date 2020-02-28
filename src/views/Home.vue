@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <Navbar />
     <LandingHero />
     <LandingTitle />
     <LandingBio />
@@ -11,6 +12,7 @@
 </template>
 
 <script>
+import Navbar from "@/components/Navbar"
 import LandingHero from "@/components/LandingHero"
 import LandingTitle from "@/components/LandingTitle"
 import LandingBio from "@/components/LandingBio"
@@ -22,6 +24,7 @@ import Footer from "@/components/Footer"
 export default {
   name: 'Home',
   components: {
+    Navbar,
     LandingHero,
     LandingTitle,
     LandingBio,
