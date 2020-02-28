@@ -26,7 +26,7 @@ const routes = [
     component: Publications
   },
   {
-    path: '/nuestro-equipo',
+    path: '/nosotros',
     name: 'OurTeam',
     component: OurTeam
   },
@@ -36,7 +36,7 @@ const routes = [
     component: SocialResponsability
   },
   {
-    path: '/internal',
+    path: '/internal/:empresa',
     name: 'Internal',
     component: Internal
   },

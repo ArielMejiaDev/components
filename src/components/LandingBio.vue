@@ -23,7 +23,7 @@ export default {
     .bio {
         height: 800px;
         width: 100%;
-        background: url('../assets/landing/piscina.jpg');
+        background: url('../assets/landing/bio_background.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

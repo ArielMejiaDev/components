@@ -5,19 +5,16 @@
                 <h3>Mapa del sitio</h3>
                 <ul>
                     <li>
-                        <a href="#">Nosotros</a>
+                        <router-link to="/nosotros">Nosotros</router-link>
                     </li>
                     <li>
-                        <a href="#">Nuestras empresas</a>
+                        <router-link to="/responsabilidad-social">Responsabilidad social</router-link>
                     </li>
                     <li>
-                        <a href="#">Responsabilidad social</a>
+                        <router-link to="/publicaciones">Publicaciones</router-link>
                     </li>
                     <li>
-                        <a href="#">Publicaciones</a>
-                    </li>
-                    <li>
-                        <a href="#">Contacto</a>
+                        <router-link to="/contacto">Contacto</router-link>
                     </li>
                 </ul>
             </div>
@@ -25,10 +22,10 @@
                 <h3>Contacto</h3>
                 <ul>
                     <li>
-                        <a href="#">(+502) 2373-5000</a>
+                        <a href="tel:502-2373-5000">(+502) 2373-5000</a>
                     </li>
                     <li>
-                        <a href="#">administracion@grupoalta.net</a>
+                        <a href="mailto:administracion@grupoalta.net">administracion@grupoalta.net</a>
                     </li>
                     <li>
                         <a href="#">2 calle 10-59 zona 14, Guatemala</a>

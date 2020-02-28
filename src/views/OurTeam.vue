@@ -1,6 +1,6 @@
 <template>
     <div class="our-team">
-        <ImageHeader :background="'social-responsability/banner.jpg'" :backgroundPosition="'center'" />
+        <ImageHeader :background="'our-team/banner.png'" :backgroundPosition="'center'" />
         <OurTeamTitle/>
         <OurTeamGrid/>
         <Footer/>

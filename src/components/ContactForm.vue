@@ -4,14 +4,14 @@
         <div class="contact-main__container__invitation">
             <h1>Contáctanos</h1>
             <ul>
-                <li>Email.  info@grupoalta.com.gt</li>
-                <li>T. 2374-5000</li>
+                <li><a href="mailto:info@grupoalta.com.gt"><strong>Email.  info@grupoalta.com.gt</strong></a></li>
+                <li><a href="tel:502-2374-5000"><strong>T. 2374-5000</strong></a></li>
                 <li>Facebook <span>•</span> Instagram</li>
             </ul>
             <h3>Forma parte de nuestro equipo</h3>
             <p>
                 Si quieres formar parte de Grupo Alta o alguna de 
-                nuestras empresas, envíanos tu CV a contrataciones@grupoalta.com.gt
+                nuestras empresas, envíanos tu CV a <a href="mailto:contrataciones@grupoalta.com.gt"><strong>contrataciones@grupoalta.com.gt</strong></a>
             </p>
         </div>
         <div class="contact-main__container__form">
@@ -57,13 +57,15 @@ export default {
                     margin-bottom: 40px;
                     text-align: left;
                 }
-                ul li {
-                    color: white;
-                    font-family: 'Montserrat', sans-serif;
-                    font-size: 14px;
-                    letter-spacing: 1.31px;
-                    line-height: 35px;
-                    margin-bottom: 53px;
+                ul {
+                    li, a {
+                        color: white;
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 14px;
+                        letter-spacing: 1.31px;
+                        line-height: 35px;
+                        margin-bottom: 53px;
+                    }
                 }
                 h3 {
                     color: $color-gold;
@@ -74,7 +76,7 @@ export default {
                     line-height: 50px;
                     margin-bottom: 16px;
                 }
-                p {
+                p, p a {
                     color: white;
                     font-family: 'Montserrat', sans-serif;
                     font-size: 14px;

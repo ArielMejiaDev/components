@@ -2,9 +2,9 @@
     <div class="landing-grid">
         <div class="landing-grid__container">
             <figure v-for="company in companies" :key="company.id">
-                <img class="background" :src="require(`@/assets/landing/${company.background}`)" alt="Casa palopo">
+                <img class="background" :src="require(`@/assets/landing/${company.background}`)" :alt="company.name">
                 <div class="overlay">
-                    <img class="logo" :src="require(`@/assets/logos/${company.logo}`)" alt="Casa palopo logo">
+                    <img v-show="company.id !== 7" class="logo" :src="require(`@/assets/logos/${company.logo}`)" :alt="`${company.logo} logo`">
                 </div>
             </figure>
         </div>
@@ -56,7 +56,7 @@ export default {
                 {
                     id: 7, 
                     name: 'Villa Bokeh',
-                    background: 'sbt.jpg',
+                    background: 'villa_bokeh.jpg',
                     logo: 'logo_sbt_white.svg'
                 },
             ]
