@@ -20,7 +20,6 @@ export default {
         background-repeat: no-repeat;
         margin-bottom: 100px;
         @include tablet {
-            height: 300px;
             background-size: cover;
             background-position: center;
         }

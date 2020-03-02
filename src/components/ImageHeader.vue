@@ -18,7 +18,8 @@ export default {
     .image-header {
         height: 600px;
         @include tablet {
-            height: 300px;
+            background-size: cover;
+            background-position: center;
         }
         width: 100%;
     }

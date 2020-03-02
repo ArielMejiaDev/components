@@ -2,34 +2,19 @@
     <div class="navbar">
         
     <div id="overlay-menu" class="overlay" :class="show" v-on:click="menu = ! menu"></div>
-    <header id="main-header" :class="open">
+    <header id="main-header" :class="open" >
         <div class="container">
-            <a href="#" id="logo" class="logo">
-                <img src="@/assets/navbar/logo.png" alt="Grupo Alta">
-            </a>
+            <router-link to="/" id="logo" class="logo" :class="onScroll">
+                <img src="@/assets/navbar/logo_white.svg" alt="Grupo Alta">
+            </router-link>
             <button class="toggle" v-on:click="menu = ! menu" >Menú</button>
             <nav>
                 <ul>
                     <li>
                         <router-link to="/nosotros">Nosotros</router-link>
                     </li>
-                    <li class="text-gold">
-                        <router-link to="/empresa/la-esquina">La Esquina</router-link>
-                    </li>
-                    <li class="text-gold">
-                        <router-link to="/empresa/palopo">Casa Palopó</router-link>
-                    </li>
-                    <li class="text-gold">
-                        <router-link to="/empresa/sbt">SBT</router-link>
-                    </li>
-                    <li class="text-gold">
-                        <router-link to="/empresa/helados-adela">Helados Adela</router-link>
-                    </li>
-                    <li class="text-gold">
-                        <router-link to="/empresa/bizu">Bizú</router-link>
-                    </li>
-                    <li class="text-gold">
-                        <router-link to="/empresa/queseso">Queseso</router-link>
+                    <li class="text-gold" v-for="company in companies" :key="company.id">
+                        <router-link :to="`/empresa/${company.slug}`">{{ company.name }}</router-link>
                     </li>
                     <li>
                         <router-link to="/responsabilidad-social">Responsabilidad social</router-link>
@@ -49,11 +34,14 @@
 </template>
 
 <script>
+import companies from "@/data/companies"
 export default {
     name: 'Navbar',
     data: function () {
         return {
-            menu: false
+            menu: false,
+            showMenu: false,
+            companies: companies
         }
     },
     computed: {
@@ -62,6 +50,26 @@ export default {
         },
         open: function() {
             return { 'open': this.menu }
+        },
+        onScroll: function() {
+            return { 'on-scroll':this.showMenu }
+        },
+        headerHeight: function() {
+            return document.querySelector('#main-header').offsetHeight
+        }
+    },
+    mounted() {
+        addEventListener('scroll', this.toggleMenu)
+    },
+    methods: {
+        scrolledPixelsAreGreaterThenHeaderHeight: function() {
+            return window.scrollY >= this.headerHeight
+        },
+        toggleMenu: function() {
+            this.showMenu = false
+            if (this.scrolledPixelsAreGreaterThenHeaderHeight()) {
+                this.showMenu = true
+            }
         }
     }
 }

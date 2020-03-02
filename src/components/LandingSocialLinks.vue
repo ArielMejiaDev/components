@@ -78,6 +78,7 @@ export default {
                     font-size: 20px;
                     font-style: italic;
                     line-height: 25px;
+                    font-weight: lighter;
                 }
                 .tags {
                     color: $color-gray;

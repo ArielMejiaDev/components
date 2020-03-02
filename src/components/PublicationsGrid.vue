@@ -110,7 +110,7 @@ export default {
                 background-color: black;
                 color: white;
                 font-family: 'Montserrat', sans-serif;
-                font-size: 16px;
+                font-size: 12px;
                 letter-spacing: 0.8px;
                 line-height: 25px;
                 width: fit-content;

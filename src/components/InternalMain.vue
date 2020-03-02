@@ -32,9 +32,9 @@
 
                 <div class="next-link">
 
-                    <a class="home-icon" href="#">
+                    <router-link class="home-icon" to="/" >
                         <img src="@/assets/internals/assets/home.svg" alt="menu">
-                    </a>
+                    </router-link>
                     
                     <div class="next-links">
                         <h6>{{ company.next.routeName }}</h6>
@@ -86,6 +86,7 @@ export default {
                     font-style: italic;
                     line-height: 50px;
                     margin-bottom: 38px;
+                    font-weight: lighter;
                     @include tablet {
                         padding: 0 50px;
                     }
@@ -138,6 +139,7 @@ export default {
                     line-height: 20px;
                     text-transform: uppercase;
                     margin-bottom: 25px;
+                    font-weight: lighter;
                 }
                 ul {
                     margin-bottom: 44px;
@@ -152,8 +154,9 @@ export default {
                     }
                 }
                 .site-link {
-                    background-color: black;
-                    color: white;
+                    background-color: white;
+                    color: black;
+                    border: 1px solid black;
                     font-family: 'Montserrat';
                     font-size: 16px;
                     letter-spacing: 1px;
@@ -162,6 +165,10 @@ export default {
                     display: block;
                     padding: 17.5px;
                     margin-bottom: 87px;
+                    &:hover {
+                        background-color: black;
+                        color: white;
+                    }
                 }
                 .next-link {
                     display: flex;

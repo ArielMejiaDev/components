@@ -15,7 +15,7 @@
             </p>
         </div>
         <div class="contact-main__container__form">
-            <form action="">
+            <form action="" v-on:submit="alertDisplay">
                 <input type="text" name="nombre" placeholder="Nombre">
                 <input type="email" name="email" placeholder="Correo electrónico">
                 <input type="phone" name="telefono" placeholder="Teléfono">
@@ -29,7 +29,19 @@
 
 <script>
 export default {
-    name: '',
+    name: 'ContactForm',
+        methods: {
+      alertDisplay(e) {
+        e.preventDefault()
+        this.$swal({
+            position: 'center',
+            icon: 'success',
+            title: 'Email enviado',
+            showConfirmButton: false,
+            timer: 1500
+        });
+      }
+    }
 }
 </script>
 
@@ -37,7 +49,10 @@ export default {
     .contact-main {
         background-color: black;
         width: 100%;
-        height: 100vh;
+        height: calc(100vh + 250px);
+        @include tablet {
+            padding-top: 150px;
+        }
         @include respond-to(850px) {
             height: auto;
         }
@@ -75,6 +90,7 @@ export default {
                     font-weight: 500;
                     line-height: 50px;
                     margin-bottom: 16px;
+                    font-weight: lighter;
                 }
                 p, p a {
                     color: white;
@@ -119,6 +135,9 @@ export default {
                         letter-spacing: 0.88px;
                         line-height: 17px;
                         margin-bottom: 40px;
+                        &:hover, &:focus {
+                            outline-color: $color-gold;
+                        }
                         @include mobile {
                             display: block;
                             width: 100%;

@@ -21,7 +21,7 @@ export default {
             font-style: italic;
             line-height: 38px;
             text-align: center;
-            font-weight: 100;
+            font-weight: lighter;
         }
     }
 </style>

@@ -1,0 +1,25 @@
+.swal2-icon.swal2-success .swal2-success-ring {
+    border-color: goldenrod !important;
+}
+
+.swal2-icon.swal2-success [class^=swal2-success-line] {
+    background-color: goldenrod !important;
+}
+
+.swal2-title {
+    color: black !important;
+    font-family: "Gelasio", sans-serif !important;
+    font-style: italic !important;
+}
+
+.swal2-content {
+    color: black !important;
+    font-family: "Monteserrat", sans-serif !important;
+    font-size: 15px !important;
+}
+
+.swal2-styled.swal2-confirm{
+    background: black !important;
+    border:0 !important;
+    color: white !important;
+}

@@ -1,31 +1,6 @@
 export default [
     {
         id: 1, 
-        slug: 'la-esquina',
-        name: 'La Esquina',
-        slogan: '',
-        phrase: `Fundada en el año 2016, La Esquina es el primer food hall guatemalteco. 
-        El cual rememora las tiendas de barrio y los mercados guatemaltecos, 
-        brindando una experiencia fuera de lo común a quien lo visita. `,
-        images: {
-            logo: 'la_esquina.jpg',
-            banner: {
-                image: 'la_esquina.jpg',
-                position: 'center',
-            },
-            square: 'la_esquina.jpg',
-            feature: 'la_esquina.jpg'
-        },
-        website: 'mercaditolaesquina.com',
-        facebook: 'mercaditolaesquina',
-        instagram: 'laesquinaguatemala',
-        next: {
-            routeName: 'Casa Palopo',
-            route: 'casa-palopo',
-        }
-    },
-    {
-        id: 2, 
         slug: 'casa-palopo',
         name: 'Casa Palopo',
         slogan: '',
@@ -50,30 +25,32 @@ export default [
         }
     },
     {
-        id: 3, 
-        slug: 'sbt',
-        name: 'SBT',
+        id: 2, 
+        slug: 'la-esquina',
+        name: 'La Esquina',
         slogan: '',
-        phrase: ``,
+        phrase: `Fundada en el año 2016, La Esquina es el primer food hall guatemalteco. 
+        El cual rememora las tiendas de barrio y los mercados guatemaltecos, 
+        brindando una experiencia fuera de lo común a quien lo visita. `,
         images: {
-            logo: 'sbt.jpg',
+            logo: 'la_esquina.jpg',
             banner: {
-                image: 'sbt.jpg',
-                position: 'bottom',
+                image: 'la_esquina.jpg',
+                position: 'center',
             },
-            square: 'sbt.jpg',
-            feature: 'sbt.jpg'
+            square: 'la_esquina.jpg',
+            feature: 'la_esquina.jpg'
         },
-        website: 'sbt.com.gt',
-        facebook: '',
-        instagram: '',
+        website: 'mercaditolaesquina.com',
+        facebook: 'mercaditolaesquina',
+        instagram: 'laesquinaguatemala',
         next: {
-            routeName: 'Helado Adela',
-            route: 'helados-adela',
+            routeName: 'Casa Palopo',
+            route: 'casa-palopo',
         }
     },
     {
-        id: 4, 
+        id: 3, 
         slug: 'helados-adela',
         name: 'Helados Adela',
         slogan: 'Helados con amor',
@@ -98,7 +75,7 @@ export default [
         }
     },
     {
-        id: 5, 
+        id: 4, 
         slug: 'bizu',
         name: 'BIZÚ',
         slogan: '',
@@ -122,7 +99,7 @@ export default [
         }
     },
     {
-        id: 6, 
+        id: 5, 
         slug: 'queseso',
         name: 'Queseso',
         slogan: '',
@@ -145,28 +122,51 @@ export default [
         }
     },
     {
-        id: 7, 
-        slug: 'villa-bokeh',
-        name: 'Villa Bokeh',
+        id: 6, 
+        slug: 'sbt',
+        name: 'SBT',
         slogan: '',
         phrase: ``,
         images: {
-            logo: 'queseso.jpg',
+            logo: 'sbt.jpg',
             banner: {
-                image: 'queseso.jpg',
-                position: 'center',
+                image: 'sbt.jpg',
+                position: 'bottom',
             },
-            square: 'queseso.jpg',
-            feature: 'queseso.jpg'
+            square: 'sbt.jpg',
+            feature: 'sbt.jpg'
         },
-        website: '',
-        facebook: '#',
-        instagram: '#',
+        website: 'sbt.com.gt',
+        facebook: '',
+        instagram: '',
         next: {
-            routeName: 'La Esquina',
-            route: 'la-esquina',
+            routeName: 'Helado Adela',
+            route: 'helados-adela',
         }
     },
+    // {
+    //     id: 7, 
+    //     slug: 'villa-bokeh',
+    //     name: 'Villa Bokeh',
+    //     slogan: '',
+    //     phrase: ``,
+    //     images: {
+    //         logo: 'queseso.jpg',
+    //         banner: {
+    //             image: 'queseso.jpg',
+    //             position: 'center',
+    //         },
+    //         square: 'queseso.jpg',
+    //         feature: 'queseso.jpg'
+    //     },
+    //     website: '',
+    //     facebook: '#',
+    //     instagram: '#',
+    //     next: {
+    //         routeName: 'La Esquina',
+    //         route: 'la-esquina',
+    //     }
+    // },
     // {
     //     id: 8, 
     //     slug: 'grupo-alta',

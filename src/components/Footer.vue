@@ -60,6 +60,7 @@ export default {
         height: 525px;
         @include tablet {
             height: fit-content;
+            padding: 40px 0;
         }
         background-color: black;
         color: white;
@@ -103,6 +104,9 @@ export default {
                     height: 50px;
                     display: flex;
                     align-items: center;
+                    @include tablet {
+                        justify-content: center;
+                    }
                     justify-content: flex-start;
                     max-width: 244px;
                     img {
@@ -123,6 +127,7 @@ export default {
                     font-size: 16px;
                     line-height: 20px;
                     margin-bottom: 38px;
+                    font-weight: lighter;
                 }
                 ul li {
                     margin: 10px 0;
