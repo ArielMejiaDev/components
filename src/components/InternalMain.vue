@@ -32,9 +32,9 @@
 
                 <div class="next-link">
 
-                    <router-link class="home-icon" to="/" >
+                    <a class="home-icon" href="/grupo-alta-demo#companies" >
                         <img src="@/assets/internals/assets/home.svg" alt="menu">
-                    </router-link>
+                    </a>
                     
                     <div class="next-links">
                         <h6>{{ company.next.routeName }}</h6>

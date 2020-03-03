@@ -1,11 +1,13 @@
 <template>
-    <div class="landing-grid">
+    <div class="landing-grid" id="companies">
         <div class="landing-grid__container">
             <figure v-for="company in companies" :key="company.id">
-                <img class="background" :src="require(`@/assets/landing/${company.background}`)" :alt="company.name">
-                <div class="overlay">
-                    <img v-show="company.id !== 7" class="logo" :src="require(`@/assets/logos/${company.logo}`)" :alt="`${company.logo} logo`">
-                </div>
+                <router-link :to="`empresa/${company.slug}`">
+                    <img class="background" :src="require(`@/assets/landing/${company.background}`)" :alt="company.name">
+                    <div class="overlay">
+                        <img v-show="company.id !== 7" class="logo" :src="require(`@/assets/logos/${company.logo}`)" :alt="`${company.logo} logo`">
+                    </div>
+                </router-link>
             </figure>
         </div>
     </div>
@@ -20,42 +22,49 @@ export default {
                 {
                     id: 1, 
                     name: 'Casa palopo',
+                    slug: 'casa-palopo',
                     background: 'casa-palopo.jpg',
                     logo: 'logo_casa_palopo_white.svg'
                 },
                 {
                     id: 2, 
                     name: 'La esquina',
+                    slug: 'la-esquina',
                     background: 'la-esquina.jpg',
                     logo: 'logo_la_esquina_white.svg'
                 },
                 {
                     id: 3, 
                     name: 'Adela',
+                    slug: 'helados-adela',
                     background: 'adela.jpg',
                     logo: 'logo_adela_white.svg'
                 },
                 {
                     id: 4, 
                     name: 'Bizu',
+                    slug: 'bizu',
                     background: 'bizu.jpg',
                     logo: 'logo_bizu_white.svg'
                 },
                 {
                     id: 5, 
                     name: 'Queseso',
+                    slug: 'queseso',
                     background: 'queseso.jpg',
                     logo: 'logo_queseso_white.svg'
                 },
                 {
                     id: 6, 
                     name: 'Sbt',
+                    slug: 'sbt',
                     background: 'sbt.jpg',
                     logo: 'logo_sbt_white.svg'
                 },
                 {
                     id: 7, 
                     name: 'Villa Bokeh',
+                    slug: 'casa-palopo',
                     background: 'villa_bokeh.jpg',
                     logo: 'logo_sbt_white.svg'
                 },
@@ -70,7 +79,6 @@ export default {
         width: 100%;
         margin-bottom: 130px;
         .landing-grid__container {
-            // @include generalMaxWidth;
             padding: 0 10px;
             @include mobile {
                 padding: 0;

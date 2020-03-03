@@ -15,12 +15,12 @@
             </p>
         </div>
         <div class="contact-main__container__form">
-            <form action="" v-on:submit="alertDisplay">
-                <input type="text" name="nombre" placeholder="Nombre">
-                <input type="email" name="email" placeholder="Correo electrónico">
-                <input type="phone" name="telefono" placeholder="Teléfono">
-                <textarea name="comentario" id="" rows="10" placeholder="Escribe tu comentario o duda acá"></textarea>
-                <button type="submit">Enviar</button>
+            <form action="" v-on:submit="submitForm" name="submit-to-google-sheet">
+                <input type="text" name="name" placeholder="Nombre" v-model="name">
+                <input type="email" name="email" placeholder="Correo electrónico" v-model="email">
+                <input type="phone" name="phone" placeholder="Teléfono" v-model="phone">
+                <textarea name="message" id="" rows="10" placeholder="Escribe tu comentario o duda acá" v-model="message"></textarea>
+                <button type="submit">{{ buttonText }}</button>
             </form>
         </div>
     </div>
@@ -28,19 +28,55 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
     name: 'ContactForm',
+    data: function() {
+        return {
+            name: '',
+            email: '',
+            phone: '',
+            message: '',
+            buttonText: 'Enviar',
+            errors: []
+        }
+    },
         methods: {
-      alertDisplay(e) {
-        e.preventDefault()
-        this.$swal({
-            position: 'center',
-            icon: 'success',
-            title: 'Email enviado',
-            showConfirmButton: false,
-            timer: 1500
-        });
-      }
+            clearForm(text) {
+                this.name = '',
+                this.email = '',
+                this.phone = '',
+                this.message = ''
+                this.buttonText = text
+            },
+            submitForm(e) {
+                e.preventDefault()
+                console.log(document.forms['submit-to-google-sheet'])
+                axios.post('https://script.google.com/macros/s/AKfycbzhDDyqb3deCd4BV8ZJDxuOTTBnQ-PZz2LqtS1fjjovbM3PJA/exec', 
+                new FormData(document.forms['submit-to-google-sheet']))
+                    .then(response => {
+                        this.$swal({
+                            position: 'center',
+                            icon: 'success',
+                            title: 'Email enviado',
+                            showConfirmButton: false,
+                            timer: 1500
+                        })
+                        console.log(response)
+                        this.clearForm('Gracias!')
+                    })
+                    .catch(error => {
+                        this.errors.push(error)
+                        console.log(error)
+                        this.$swal({
+                            position: 'center',
+                            title: 'Ups no se puede enviar el mensaje en este momento',
+                            showConfirmButton: false,
+                            timer: 1500
+                        })
+                        this.clearForm('Intenta mas tarde gracias!')
+                    })
+            }
     }
 }
 </script>

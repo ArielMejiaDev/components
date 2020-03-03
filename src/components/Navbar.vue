@@ -88,7 +88,7 @@ export default {
     text-align: center;
     overflow: hidden;
     transition: allt 0.3s;
-    z-index: 2;
+    z-index: 3;
     .logo {
         width: 81px;
         height: 99px;

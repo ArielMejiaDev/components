@@ -27,7 +27,8 @@ export default {
         return {
             members: [
                 {name: 'Claudia Bosch',     image: require('../assets/our-team/claudia.jpg'),  position: 'Presidenta',                         info: 'Nuestra fundadora, la cabeza del grupo. Emprendedora y líder de un grupo experto en nuevas experiencias.'},
-                {name: 'Marcela Bosch',     image: require('../assets/our-team/marcela.jpg'),  position: 'Director SBT',                       info: ''},
+                {name: 'Marcela Bosch',     image: require('../assets/our-team/marcela.jpg'),  position: 'Directora creativa',                 info: ''},
+                {name: 'Paul Bosch',        image: require('../assets/our-team/paul.jpg'),     position: 'Director SBT',                       info: ''},
                 {name: 'Katina Bosch',      image: require('../assets/our-team/katina.jpg'),   position: 'Directora BIZÚ',                     info: ''},
                 {name: 'Isabel Bosch',      image: require('../assets/our-team/isabel.jpg'),   position: 'Project Manager',                    info: ''},
                 {name: 'Rocio de la peña',  image: require('../assets/our-team/rocio.jpg'),    position: 'Directora Ejecutiva',                info: ''},
@@ -79,7 +80,7 @@ export default {
                     right: 0;
                     bottom: 0;
                     left: 0;
-                    background: linear-gradient(270deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.1) 100%);
+                    background: linear-gradient(to bottom, transparent, rgba(0,0,0,.6));
                 }
                 .our-team-grid__container__picture__data {
                     position: absolute;
