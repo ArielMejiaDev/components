@@ -26,17 +26,35 @@ export default {
     data: function() {
         return {
             members: [
-                {name: 'Claudia Bosch',     image: require('../assets/our-team/claudia.jpg'),  position: 'Presidenta',                         info: 'Nuestra fundadora, la cabeza del grupo. Emprendedora y líder de un grupo experto en nuevas experiencias.'},
-                {name: 'Marcela Bosch',     image: require('../assets/our-team/marcela.jpg'),  position: 'Directora creativa',                 info: ''},
-                {name: 'Paul Bosch',        image: require('../assets/our-team/paul.jpg'),     position: 'Director SBT',                       info: ''},
-                {name: 'Katina Bosch',      image: require('../assets/our-team/katina.jpg'),   position: 'Directora BIZÚ',                     info: ''},
-                {name: 'Isabel Bosch',      image: require('../assets/our-team/isabel.jpg'),   position: 'Project Manager',                    info: ''},
-                {name: 'Rocio de la peña',  image: require('../assets/our-team/rocio.jpg'),    position: 'Directora Ejecutiva',                info: ''},
-                {name: 'Gabriela Estrada',  image: require('../assets/our-team/gabriela.jpg'), position: 'Cordinadora de Recursos Humanos',    info: 'Mejora Continua'},
-                {name: 'Eduardo Gonzales',  image: require('../assets/our-team/eduardo.jpg'),  position: 'Chef Corporativo',                   info: 'Transparencia'},
-                {name: 'Carmen Ochoa',      image: require('../assets/our-team/carmen.jpg'),    position: 'Gerente Residente Casa Palopó',      info: 'Salud Integral'},
-                {name: 'Paula Lehnoff',     image: require('../assets/our-team/paula.jpg'),    position: 'Directora de Mercadeo',              info: 'Transparencia'},
-                {name: 'Megan Skinner',     image: require('../assets/our-team/megan.jpg'),     position: 'Responsabilidad Social',             info: 'Agradecimiento'},
+                {name: 'Claudia',         image: require('../assets/our-team/claudia.jpg'),           position: 'Presidenta',                         info: ''},
+                {name: 'Marcela',         image: require('../assets/our-team/marcela.jpg'),           position: 'Directora creativa',                 info: ''},
+                {name: 'Paul',            image: require('../assets/our-team/paul.jpg'),              position: 'Director SBT',                       info: ''},
+                {name: 'Katina',          image: require('../assets/our-team/katina.jpg'),            position: 'Directora BIZÚ',                     info: ''},
+                {name: 'Isabel',          image: require('../assets/our-team/isabel.jpg'),            position: 'Project Manager',                    info: ''},
+                {name: 'Rocio',           image: require('../assets/our-team/rocio.jpg'),             position: 'Directora Ejecutiva',                info: ''},
+                {name: 'Gabriela',        image: require('../assets/our-team/gabriela.jpg'),          position: 'Cordinadora de Recursos Humanos',    info: ''},
+                {name: 'Eduardo',         image: require('../assets/our-team/eduardo.jpg'),           position: 'Chef Corporativo',                   info: ''},
+                {name: 'Carmen',          image: require('../assets/our-team/carmen.jpg'),            position: 'Gerente Residente Casa Palopó',      info: ''},
+                {name: 'Paula',           image: require('../assets/our-team/paula.jpg'),             position: 'Directora de Mercadeo',              info: ''},
+                {name: 'Megan',           image: require('../assets/our-team/megan.jpg'),             position: 'Responsabilidad Social',             info: ''},
+
+                {name: 'Anita',           image: require('../assets/our-team/anita.jpg'),             position: 'Asistente de SBT',                   info: ''},
+                {name: 'Ariel',           image: require('../assets/our-team/ariel.jpg'),             position: 'Auxiliar de Mantenimiento',          info: ''},
+                {name: 'Daniel',          image: require('../assets/our-team/daniel.jpg'),            position: 'Asistente en Contabilidad',          info: ''},
+                {name: 'Edena',           image: require('../assets/our-team/edena.jpg'),             position: 'Auxiliar de Mantenimiento',          info: ''},
+                {name: 'Ericka',          image: require('../assets/our-team/ericka.jpg'),            position: 'Gerente Comercial',                  info: ''},
+
+                {name: 'Gabriela',        image: require('../assets/our-team/gabriela-rrhh.jpg'),     position: 'Coordinadora de Recusos Humanos',    info: ''},
+                {name: 'Gerardo',         image: require('../assets/our-team/gerardo.jpg'),           position: 'Jefe de Contabilidad',               info: ''},
+                {name: 'Griselda',        image: require('../assets/our-team/griselda.jpg'),          position: 'Modista Bizu',                       info: ''},
+                {name: 'Hugo',            image: require('../assets/our-team/hugo.jpg'),              position: 'Director Financiero',                info: ''},
+                {name: 'Isabel',          image: require('../assets/our-team/isabel-asesora.jpg'),    position: 'Asesora de Modas Bizu',              info: ''},
+
+                {name: 'Jose Juan',       image: require('../assets/our-team/jose-juan.jpg'),         position: 'Asistente de Cuentas por Pagar',     info: ''},
+                {name: 'Kevin',           image: require('../assets/our-team/kevin.jpg'),             position: 'Soporte IT',                         info: ''},
+                {name: 'Maria Fernanda',  image: require('../assets/our-team/maria-fernanda.jpg'),    position: 'Diseñadora Gráfica',                 info: ''},
+                {name: 'Rircardo',        image: require('../assets/our-team/ricardo.jpg'),           position: 'Diseñador Gráfico',                  info: ''},
+                {name: 'Veronica',        image: require('../assets/our-team/veronica.jpg'),          position: 'Asistente-de-Dirección',             info: ''},
                 
             ],
         }
@@ -72,6 +90,9 @@ export default {
                 overflow: hidden;
                 img {
                     width: 100%;
+                    height: 383px;
+                    object-fit: cover;
+                    object-position: top;
                     vertical-align: top;
                 }
                 .our-team-grid__container__picture__overlay {

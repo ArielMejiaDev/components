@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: '/grupo-alta-demo/',
+  publicPath: '/grupo-alta/',
   css: {
     loaderOptions: {
       scss: {

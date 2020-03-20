@@ -5,7 +5,7 @@
                 <router-link :to="`empresa/${company.slug}`">
                     <img class="background" :src="require(`@/assets/landing/${company.background}`)" :alt="company.name">
                     <div class="overlay">
-                        <img v-show="company.id !== 7" class="logo" :src="require(`@/assets/logos/${company.logo}`)" :alt="`${company.logo} logo`">
+                        <img class="logo" :src="require(`@/assets/logos/${company.logo}`)" :alt="`${company.logo} logo`">
                     </div>
                 </router-link>
             </figure>
@@ -66,7 +66,7 @@ export default {
                     name: 'Villa Bokeh',
                     slug: 'casa-palopo',
                     background: 'villa_bokeh.jpg',
-                    logo: 'logo_sbt_white.svg'
+                    logo: 'logo_villa_bokeh_white.svg'
                 },
             ]
         }

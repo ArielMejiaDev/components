@@ -5,8 +5,8 @@
 
         <h1>Responsabilidad Social</h1>
         <p>
-            Creemos en un por lo tanto, apoyamos proyectos de sostenibilidad y 
-            compromiso con nuestra comunidad como Pintando Santa Catarina Palopo y Hogar Estuardo Mini.
+            En Grupo Alta estamos comprometidos a apoyar proyectos de nuestro país, 
+            como Pintando Santa Catarina Palopó y Hogar Estuardo Mini.
         </p>
 
         <div class="social-responsability-main__container__grid">

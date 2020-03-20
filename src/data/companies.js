@@ -103,7 +103,10 @@ export default [
         slug: 'queseso',
         name: 'Queseso',
         slogan: '',
-        phrase: ``,
+        phrase: `
+        Un misterio, un buen queso, una conversasión entretenida, una bonita compañía. 
+        Restaurante Pop-Up, servicio de catering, y tablas para llevar de quesos y jamones, acompañadas de buen vino.
+        `,
         images: {
             logo: 'queseso.jpg',
             banner: {
@@ -126,7 +129,11 @@ export default [
         slug: 'sbt',
         name: 'SBT',
         slogan: '',
-        phrase: ``,
+        phrase: `
+        SBT es un un negocio de transporte que promueve experiencia, seguridad y comodidad. 
+        Brinda un servicio de alta calidad a Antigua, Atitlán y otros departamentos de Guatemala. 
+        Transportation meets experience!
+        `,
         images: {
             logo: 'sbt.jpg',
             banner: {
