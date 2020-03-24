@@ -64,7 +64,7 @@ export default {
                 {
                     id: 7, 
                     name: 'Villa Bokeh',
-                    slug: 'casa-palopo',
+                    slug: 'villa-bokeh',
                     background: 'villa_bokeh.jpg',
                     logo: 'logo_villa_bokeh_white.svg'
                 },

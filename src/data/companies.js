@@ -147,33 +147,33 @@ export default [
         facebook: '',
         instagram: '',
         next: {
-            routeName: 'Helado Adela',
-            route: 'helados-adela',
+            routeName: 'Villa Bokeh',
+            route: 'villa-bokeh',
         }
     },
-    // {
-    //     id: 7, 
-    //     slug: 'villa-bokeh',
-    //     name: 'Villa Bokeh',
-    //     slogan: '',
-    //     phrase: ``,
-    //     images: {
-    //         logo: 'queseso.jpg',
-    //         banner: {
-    //             image: 'queseso.jpg',
-    //             position: 'center',
-    //         },
-    //         square: 'queseso.jpg',
-    //         feature: 'queseso.jpg'
-    //     },
-    //     website: '',
-    //     facebook: '#',
-    //     instagram: '#',
-    //     next: {
-    //         routeName: 'La Esquina',
-    //         route: 'la-esquina',
-    //     }
-    // },
+    {
+        id: 7, 
+        slug: 'villa-bokeh',
+        name: 'Villa Bokeh',
+        slogan: '',
+        phrase: ``,
+        images: {
+            logo: 'queseso.jpg',
+            banner: {
+                image: 'villa_bokeh.jpg',
+                position: 'center',
+            },
+            square: 'villa_bokeh.jpg',
+            feature: 'villa_bokeh.jpg'
+        },
+        website: '',
+        facebook: '#',
+        instagram: '#',
+        next: {
+            routeName: 'La Esquina',
+            route: 'la-esquina',
+        }
+    },
     // {
     //     id: 8, 
     //     slug: 'grupo-alta',
